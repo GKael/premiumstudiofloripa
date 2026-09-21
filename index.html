@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -155,11 +155,19 @@
 
     <!-- Hero Section -->
     <section class="relative w-full h-[90vh] md:h-[95vh] hero-mask overflow-hidden bg-brand-black">
-        <!-- Background Image (Full Opacity, No Scale for Quality) -->
-        <img src="./hero-new.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Premium Studio Carro">
+        <!-- Background Video (YouTube 4k Loop) -->
+        <div class="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+            <iframe 
+                class="absolute top-1/2 left-1/2 w-[300%] h-[300%] md:w-[150%] md:h-[150%] -translate-x-1/2 -translate-y-1/2" 
+                src="https://www.youtube.com/embed/H9jWbtH8Pss?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=H9jWbtH8Pss&playsinline=1&rel=0&disablekb=1&vq=hd2160" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
         
         <!-- Stronger Shadows (Left and Bottom) -->
-        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent w-full md:w-3/4"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
         
